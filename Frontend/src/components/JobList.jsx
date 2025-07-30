@@ -11,7 +11,7 @@ const JobList = ({ refresh }) => {
     }, [refresh]);
 
     return (
-        <div className="grid gap-4">
+        <div className="grid gap-4 flex-1/2">
             {jobs.map(job => (
                 <div key={job._id} className="bg-white p-4 rounded shadow">
                     <h3 className="text-lg font-bold">{job.title}</h3>
