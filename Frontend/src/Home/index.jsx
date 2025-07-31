@@ -1,19 +1,17 @@
-import { useState } from 'react';
-import JobForm from '../components/JobForm';
-import JobList from '../components/JobList';
+// import { useState } from 'react';
+// import JobForm from '../components/JobForm';
+// import JobList from '../components/JobList';
+// import Outlet from '../Layout/Layout';
+// import Layout from '../Layout/Layout';
 
-const Home = () => {
-    const [refresh, setRefresh] = useState(false);
+// const Home = () => {
+//     // const [refresh, setRefresh] = useState(false);
 
-  return (
-   <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-[#fa709a] to-[#fee140] bg-clip-text text-transparent">Job Board</h1>
-      <div className="w-full flex justify-center gap-6 mx-auto">
-        <JobForm onJobPosted={() => setRefresh(!refresh)} />
-        <JobList refresh={refresh}/>
-      </div>
-    </div>
-  )
-}
+//   return (
+//   <Layout />
+//   )
 
-export default Home
+  
+// }
+
+// export default Home
