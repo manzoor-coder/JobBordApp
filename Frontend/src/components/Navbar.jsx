@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -67,21 +68,21 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-            <a href="#jobs" className="hover:text-blue-500 transition">
+            <Link to="#jobs" className="hover:text-blue-500 transition">
               Jobs
-            </a>
-            <a href="#companies" className="hover:text-blue-500 transition">
+            </Link>
+            <Link to="#companies" className="hover:text-blue-500 transition">
               Companies
-            </a>
-            <a href="#about" className="hover:text-blue-500 transition">
+            </Link>
+            <Link to="#about" className="hover:text-blue-500 transition">
               About
-            </a>
-            <a href="#contact" className="hover:text-blue-500 transition">
+            </Link>
+            <Link to="#contact" className="hover:text-blue-500 transition">
               Contact
-            </a>
-            <a href="#contact" className="hover:text-blue-500 transition">
+            </Link>
+            <Link to="/jobpost" className="hover:text-blue-500 transition">
               Post Job
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -119,34 +120,41 @@ const Navbar = () => {
 
           {/* Drawer Navigation */}
           <nav className="flex flex-col p-6 space-y-4">
-            <a
-              href="#jobs"
+            <Link
+              to="#jobs"
               className="text-lg text-gray-700 hover:text-blue-500 transition py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Jobs
-            </a>
-            <a
-              href="#companies"
+            </Link>
+            <Link
+              to="#companies"
               className="text-lg text-gray-700 hover:text-blue-500 transition py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Companies
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="#about"
               className="text-lg text-gray-700 hover:text-blue-500 transition py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="#contact"
               className="text-lg text-gray-700 hover:text-blue-500 transition py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
-            </a>
+            </Link>
+            <Link
+              to="/jobpost"
+              className="text-lg text-gray-700 hover:text-blue-500 transition py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Post Job
+            </Link>
           </nav>
         </div>
       </div>
